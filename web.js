@@ -18,7 +18,7 @@ app.use(function(req, res, next) {
 app.use(express.static(__dirname+'/dist'));
 
 require('coffee-script');
-runHook = require(__dirname + '/src/eventbrite').run;
+var runHook = require(__dirname + '/src/eventbrite').run;
 
 app.get('/', function(request, response) {
   response.render('index.html');
