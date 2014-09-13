@@ -280,7 +280,7 @@ section {
         height: 100%;
 
         background-color: #000;
-        background-image: url("../images/cool-cat.gif");
+        background-image: url("../images/lame-blob.png");
         background-size: 100% 100%;
 
         // -webkit-transform: scaleX(5) scaleY(-5);
@@ -871,7 +871,7 @@ section {
 
 .sponsor-avast {
     @extend %sponsor;
-    background: rgb(68, 78, 90)
+    background: rgb(255, 152, 0);
 }
 
 .sponsor-socialbakers {
