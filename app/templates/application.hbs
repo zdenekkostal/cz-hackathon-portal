@@ -15,7 +15,6 @@
             <div class="col-xs-12">
                 <h2>Prague, November 7 - 9, 2014</h2>
                 <div class="description-left">
-                    <p>Registration starts on September 29.</p>
                     <div class="social-icons">
                         <a href="https://www.facebook.com/czhackathon"><i class="icon-facebook-sign"></i></a>
                         <a href="https://www.twitter.com/czhackathon"><i class="icon-twitter-sign"></i></a>
@@ -23,6 +22,12 @@
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section class="register section-small" id="register">
+            <h2>Registration</h2>
+            <i class="icon-rocket"></i>
+            <a href="https://app.takeplace.eu/register/register.html?cmd=Register&eid=b8369d42610f4c548044274a7a7cb8ef&api_key=x&pid=e7564b212d9d47e5bec7346fc54e1a5a&locale=cs" target="_blank"><small class="register-button">I want to join #czhackathon</small></a>
         </section>
 
         <!--
@@ -72,8 +77,8 @@
             <div class="col-xs-12">
                 <h2>Life Hacking</h2>
                 <div class="description-content">
-                    <p>There is an app for every possible human activity - falling asleep, sleeping, getting up or even brushing your teeth. There is nothing more to be invented&hellip;</p>
-                    <p>Or is it? Are you able to come up with some task which is not successfuly computerized? If so - sign up for the Czech Hackathon where we can together push the limits of what is possible. There is an app for that :)</p>
+                    <p>There is an app for every possible human activity - falling asleep, sleeping, getting up or even brushing your teeth. There is nothing left to invent&hellip;</p>
+                    <p>Or is there? Have you come up with some task that hasn't yet been successfully computerized? If so - sign up for the Czech Hackathon, where together we will push the limits of what is possible. There's an app for that :)</p>
                 </div>
             </div>
         </section>
@@ -93,32 +98,16 @@
                 </div>
                 <div class="schedule-line">
                     <div class="schedule-time">7:15pm</div>
-                    <!--<div class="schedule-event">API &amp; NodeJS at Socialbakers - <b>Martin Homolka</b></div>-->
-                    <div class="schedule-event">Data Drive Life - <b>Jiří Tobolka</b></div>
+                    <div class="schedule-event">Data Driven Life - <b><a href="#" {{action 'scrollTo' 'jiri-tobolka'}}>Jiří Tobolka</a></b></div>
                     <div class="schedule-dots">&nbsp;</div>
                 </div>
                 <div class="schedule-line">
-                    <div class="schedule-time">7:30pm</div>
-                    <div class="schedule-event">Android Wear - <b>David Vávra</b></div>
+                    <div class="schedule-time">7:35pm</div>
+                    <div class="schedule-event">Android Wear - <b><a href="#" {{action 'scrollTo' 'david-vavra'}}>David Vávra</a></b></div>
                     <div class="schedule-dots">&nbsp;</div>
                 </div>
                 <div class="schedule-line">
-                    <div class="schedule-time">7:45pm</div>
-                    <div class="schedule-event">Guest talk - to be specified</div>
-                    <div class="schedule-dots">&nbsp;</div>
-                </div>
-                <div class="schedule-line">
-                    <div class="schedule-time">8:00pm</div>
-                    <div class="schedule-event">Guest talk - to be specified</div>
-                    <div class="schedule-dots">&nbsp;</div>
-                </div>
-                <div class="schedule-line">
-                    <div class="schedule-time">8:15pm</div>
-                    <div class="schedule-event">Guest talk - to be specified</div>
-                    <div class="schedule-dots">&nbsp;</div>
-                </div>
-                <div class="schedule-line">
-                    <div class="schedule-time">8:45pm</div>
+                    <div class="schedule-time">8:30pm</div>
                     <div class="schedule-event">Dinner</div>
                     <div class="schedule-dots">&nbsp;</div>
                 </div>
@@ -203,7 +192,27 @@
                     <div class="schedule-event">Wrap up</div>
                     <div class="schedule-dots">&nbsp;</div>
                 </div>
+            </div>
 
+            <div class="schedule-content schedule-info">
+                <p>Program is subject to change.</p>
+            </div>
+        </section>
+
+        <section class="info section-small" id="info">
+            <h2>General info</h2>
+
+            <div class="info-content">
+
+                <p>What to bring: a head full of good ideas, a taste for hacking, and sleeping equipment if you plan on sleeping over (sleeping bag, mat, etc). Food will be provided.</p>
+                <p>Price: <strong>100 CZK</strong></p>
+                <p>For those of you who are interested in hardware, you'll have the opportunity to make your own hardware.</p>
+
+                <h3>Transport</h3>
+
+                <p>Take bus 120 to stop Pod Děvínem. TECHSQUARE is down the hill on the left.</p>
+                <p>Take tram 6,12, 14, or 20 to stop Lihovar, the continue a little ways in the same direction as the tram. TECHSQUARE is cross the bridge on the right.</p>
+                <p>Parking - there are a few places at TECHSQUARE and unlimited parking in the street at Ke Sklárně (the street that leads to MeetFactory</p>
             </div>
         </section>
 
@@ -212,6 +221,7 @@
             <h2>Keep me posted</h2>
             {{render subscription }}
         </section>
+        -->
 
         <section class="section-small superheroes" id="superheroes">
             <h2>Our superheroes</h2>
@@ -219,51 +229,26 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 superhero-items">
-                        <figure class="superhero-item">
-                            <div class="image image-homolka" width="120" height="120"></div>
+                        <figure class="superhero-item" id="jiri-tobolka">
                             <figcaption>
-                            <a href="http://cz.linkedin.com/in/martinhomolka" target="_blank">
-                                <strong>Martin Homolka</strong>
-                            </a> - Keen interest in big data drove Martin to launch Socialbakers where he spearheads design and development of its scalable database and cloud architecture. </figcaption>
+                                <a href="http://about.me/jirtob" target="_blank">
+                                    <strong>Jiří Tobolka</strong>
+                                </a> - Jiří Tobolka - New tech enthusiast, GoodData Developer Evangelist, Board rider, Apple user, FIM graduate
+                            </figcaption>
                         </figure>
 
-                        <figure class="superhero-item">
-                            <div class="image image-volny" width="120" height="120"></div>
+                        <figure class="superhero-item" id="david-vavra">
                             <figcaption>
-                            <a href="http://cz.linkedin.com/pub/petr-volny/17/370/725" target="_blank">
-                                <strong>Petr Volný</strong>
-                            </a> - Making big data understandable to anyone by creating robust visualization platform as a front end engineer in GoodData.</figcaption>
-                        </figure>
-
-                        <figure class="superhero-item">
-                            <div class="image image-jezek" width="120" height="120"></div>
-                            <figcaption>
-                            <a href="http://cz.linkedin.com/pub/jan-jezek/2/7aa/495" target="_blank">
-                                <strong>Jan Ježek</strong>
-                            </a> - Network security drove much of Jan&apos;s early professional life and ultimately lead him to embracing cloud security and cloud architecture for Samepage.io.</figcaption>
-                        </figure>
-
-                        <figure class="superhero-item">
-                            <div class="image image-prskavec" width="120" height="120"></div>
-                            <figcaption>
-                            <a href="http://cz.linkedin.com/in/ladislavprskavec" target="_blank">
-                                <strong>Ladislav Prskavec</strong>
-                            </a> - Frequent speaker on AngularJS and Continuous Delivery. Intrigued by performance issues with single-page web apps, Ladislav started to dig deeper and became an AngularJS evangelist.</figcaption>
-                        </figure>
-
-                        <figure class="superhero-item">
-                            <div class="image image-vavra" width="120" height="120"></div>
-                            <figcaption>
-                            <a href="http://cz.linkedin.com/in/destil" target="_blank">
-                                <strong>David Vávra</strong>
-                            </a> - The Android platform and participation in Google Developer Groups brought David to Inmite, where he advocates open-source initiatives and leads developer relations.</figcaption>
+                                <a href="http://www.destil.cz/" target="_blank">
+                                    <strong>David Vávra</strong>
+                                </a> - Android Developer, Glass Explorer, GDG Organizer
+                            </figcaption>
                         </figure>
                     </div>
                 </div>
             </div>
 
         </section>
-        -->
 
         <section class="social section-small" id="social">
             <h2>#czhackathon</h2>
@@ -309,5 +294,7 @@
         </section>
 
         <section class="footer section-small section-fullSize" id="footer">
-            <h2 class="l-prev">Czech Hackathon!</h2>
+            <h2 class="l-prev">
+                Czech Hackathon!
+            </h2>
         </section>

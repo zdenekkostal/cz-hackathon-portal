@@ -4,8 +4,16 @@ CzHackathonPortal.ApplicationController = Em.Controller.extend({
 
     successBarVisible: false,
 
+    $viewport: $('body,html'),
+
     closeSuccessBar: function() {
         this.set('successBarVisible', false);
+    },
+
+    scrollTo: function(id) {
+        this.get('$viewport').animate({
+            scrollTop: $("#" + id).offset().top
+        }, 600, "swing");
     },
 
     init: function() {

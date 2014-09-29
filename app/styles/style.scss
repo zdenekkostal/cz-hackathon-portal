@@ -450,6 +450,7 @@ section {
     }
 
     .register-button {
+        display: block;
         width: 675px;
         height: 62px;
 
@@ -476,6 +477,39 @@ section {
         }
     }
 
+}
+
+////////////////////////////////////////////////////////////////////////
+// info
+
+.info {
+    color: #000;
+    background: #ef6233;
+
+    > h2 {
+        color: #fff;
+    }
+}
+
+.info-content {
+    @extend %description-class;
+    text-align: left;
+    font-size: 18px;
+
+    ul, li {
+        margin: 0;
+        padding: 0;
+        line-height: 1.3;
+        list-style: none;
+    }
+
+    > h3 {
+        margin: .5em 0;
+        text-transform: uppercase;
+        text-align: center;
+        font: 35px/1.2 'bebas_neueregular';
+        color: #fff;
+    }
 }
 
 ////////////////////////////////////////////////////////////////////////
@@ -633,28 +667,36 @@ section {
     margin: 0 auto 70px;
     font-size: 20px;
     color: #333;
+}
 
-    .schedule-line {
-        display:block;
-        margin-bottom: 10px;
-        clear: both;
-    }
+.schedule-line {
+    display:block;
+    margin-bottom: 10px;
+    clear: both;
+}
 
-    .schedule-time {
-        margin:0px;
-        float:left;
-        padding-right: 3px;
-    }
+.schedule-time {
+    margin:0px;
+    float:left;
+    padding-right: 3px;
+}
 
-    .schedule-dots {
-        overflow: hidden;
-        height: 20px;
-        border-bottom: 3px dotted #aaa;
-    }
+.schedule-dots {
+    overflow: hidden;
+    height: 20px;
+    border-bottom: 3px dotted #aaa;
+}
 
-    .schedule-event {
-        float: right;
-        padding-left: 3px;
+.schedule-event {
+    float: right;
+    padding-left: 3px;
+}
+
+.schedule-info {
+    padding: 0;
+
+    > p {
+        margin: 0;
     }
 }
 
