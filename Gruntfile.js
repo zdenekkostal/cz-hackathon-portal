@@ -270,7 +270,7 @@ module.exports = function (grunt) {
                     src: [
                         '*.{ico,txt}',
                         '.htaccess',
-                        'images/{,*/}*.{webp,gif}',
+                        'images/{,*/}*.{webp,gif,ico}',
                         'styles/fonts/*',
                         'images/lame-blob.png'
                     ]
