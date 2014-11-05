@@ -143,6 +143,10 @@ section {
         font-size: 50px;
     }
 
+    .headline-subsection {
+        margin: 50px 0 25px;
+    }
+
     @include respond-to(handhelds) {
         h2 {
             font-size: 30px;
@@ -356,6 +360,18 @@ section {
             text-decoration: none;
             color: #333;
         }
+    }
+}
+
+////////////////////////////////////////////////////////////////////////
+// partners
+
+.partners {
+    @extend %description-class;
+    background: #fff;
+
+    &:last-child {
+        margin: 0;
     }
 }
 
@@ -951,13 +967,27 @@ section {
         }
     }
 }
+
 .small-logo {
     background: url('../images/small-logo.png') no-repeat;
     width: 78px;
     height: 78px;
 }
 
-.mmp {
+%partner {
+    display: block;
+}
+
+.czechcrunch {
+    @extend %partner;
+    width: 750px;
+    height: 144px;
     background: url('../images/czechcrunch.png') no-repeat center center;
-    height: 200px;
+}
+
+.bastliri {
+    @extend %partner;
+    width: 477px;
+    height: 150px;
+    background: url('../images/bastliri.png') no-repeat center center;
 }
