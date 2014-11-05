@@ -37,9 +37,9 @@ module.exports = function (grunt) {
                 files: ['test/spec/{,*/}*.coffee'],
                 tasks: ['coffee:test']
             },
-            compass: {
+            sass: {
                 files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
-                tasks: ['compass:server']
+                tasks: ['sass']
             },
             neuter: {
                 files: ['<%= yeoman.app %>/scripts/{,*/}*.js'],
@@ -151,24 +151,21 @@ module.exports = function (grunt) {
                 }]
             }
         },
-        compass: {
-            options: {
-                sassDir: '<%= yeoman.app %>/styles',
-                cssDir: '.tmp/styles',
-                generatedImagesDir: '.tmp/images/generated',
-                imagesDir: '<%= yeoman.app %>/images',
-                javascriptsDir: '<%= yeoman.app %>/scripts',
-                fontsDir: '<%= yeoman.app %>/styles/fonts',
-                importPath: 'app/bower_components',
-                httpImagesPath: '/images',
-                httpGeneratedImagesPath: '/images/generated',
-                httpFontsPath: '/styles/fonts',
-                relativeAssets: false
-            },
-            dist: {},
-            server: {
+        sass: {
+            all: {
+                files: [{
+                    expand: true,
+                    cwd: '<%= yeoman.app %>/styles',
+                    src: ['**/*.scss'],
+                    dest: '<%= yeoman.app %>/styles',
+                    ext: '.css'
+                }],
+
                 options: {
-                    debugInfo: true
+                    imagePath: '<%= yeoman.app %>/images',
+                    includePaths: [
+                        '<%= yeoman.app %>/bower_components/'
+                    ]
                 }
             }
         },
@@ -281,17 +278,17 @@ module.exports = function (grunt) {
             server: [
                 'emberTemplates',
                 'coffee:dist',
-                'compass:server'
+                'sass'
             ],
             test: [
                 'emberTemplates',
                 'coffee',
-                'compass'
+                'sass'
             ],
             dist: [
                 'emberTemplates',
                 'coffee',
-                'compass:dist',
+                'sass',
                 'imagemin',
                 'svgmin',
                 'htmlmin'
