@@ -4508,7 +4508,7 @@ section {
   top: 30px;
   right: 0; }
 
-.description-content, .description-left, .partners, .info-content {
+.description-content, .description-left, .info-content {
   max-width: 725px;
   margin: 0 auto;
   font-size: 25px; }
@@ -4524,6 +4524,7 @@ section {
     color: #333; }
 
 .partners {
+  margin: 0 auto;
   background: #fff; }
   .partners:last-child {
     margin: 0; }
@@ -4954,7 +4955,7 @@ section {
   height: 78px; }
 
 .czechcrunch, .bastliri {
-  display: block; }
+  display: inline-block; }
 
 .czechcrunch {
   width: 750px;

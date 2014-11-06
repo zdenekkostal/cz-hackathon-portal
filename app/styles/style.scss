@@ -367,7 +367,7 @@ section {
 // partners
 
 .partners {
-    @extend %description-class;
+    margin: 0 auto;
     background: #fff;
 
     &:last-child {
@@ -975,7 +975,7 @@ section {
 }
 
 %partner {
-    display: block;
+    display: inline-block;
 }
 
 .czechcrunch {
